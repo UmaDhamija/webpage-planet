@@ -30,16 +30,12 @@
     text-align: center;
   }
 
-  p{
-    font-family: Lato;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-  }
-
   .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #F2CFC2;
-    padding: 15px;
     width: 200px;
     right: 0px;
     top: 0px;
@@ -47,16 +43,15 @@
     height: 100%;
   }
 
-  .menu-text{
-    margin-top: 150px;
-    font-size: 24pt;
+  .menu_text{
+    font-size: 20pt;
     font-family: Lato;
     font-weight: bolder;
     color: black;
   }
 
   .thumbnailContainer {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 200px;
     margin-right: 200px;
     margin-left: 80px;
@@ -80,12 +75,13 @@
   <body>
 
     <div class="menu">
-    <a href="index.html"><p class="menu-text">Home</p></a>
-    <a href="Images.html"><p class="menu-text">Images</p></a>
-    <a href="Videos.html"><p class="menu-text">Videos</p></a>
+      <a href="index.html" class="menu_text">Home</a>
+      <a href="Videos.html" class="menu_text">Videos</a> <!--class menu_text allows to suggest what the text in the meny container will look like-->
+      <a href="Content.html" class="menu_text">Content</a>
+      <a href="Images.html" class="menu_text">Images</a>
     </div>
 
-    <h1>More Information about our Climate.</h1>
+    <h1>Quotes.</h1>
 
     <div class="thumbnailContainer">
       <h3>People are affected by climate change every day.</h3>

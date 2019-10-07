@@ -7,13 +7,11 @@
 <style>
   body{
     background-color: black;
-    padding: 5;
-    margin: 5;
   }
 
   h1{
     margin: 50px;
-    margin-left: 250px;
+    margin-right: 250px;
     font-family: Lato;
     font-size: 50px;
     color: white;
@@ -21,14 +19,7 @@
   }
 
   h2{
-    margin-left: 200px;
-    font-family: Lato;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-  }
-
-  p{
+    margin-right: 200px;
     font-family: Lato;
     font-size: 20px;
     color: white;
@@ -36,41 +27,47 @@
   }
 
   .iframe-container{
-    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 100px;
     text-align: center;
   }
 
   .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #F2CFC2;
-    padding: 15px;
     width: 200px;
-    left: 0px;
+    right: 0px;
     top: 0px;
     position: fixed;
     height: 100%;
   }
 
-  .menu-text{
-    margin-top: 150px;
-    font-size: 24pt;
+  .menu_text{
+    font-size: 20pt;
     font-family: Lato;
     font-weight: bolder;
     color: black;
   }
 
+
 </style>
 
   <body>
 
-    <div class="menu">
-    <a href="index.html"><p class="menu-text">Home</p></a>
-    <a href="Images.html"><p class="menu-text">Images</p></a>
-    <a href="Content.html"><p class="menu-text">Content</p></a>
+    <div class="menu"> <!--This is the menu container. class menu allows me to suggest where menu will be and how it looks-->
+      <a href="index.html" class="menu_text">Home</a>
+      <a href="Videos.html" class="menu_text">Videos</a> <!--class menu_text allows to suggest what the text in the meny container will look like-->
+      <a href="Content.html" class="menu_text">Content</a>
+      <a href="Images.html" class="menu_text">Images</a>
     </div>
 
     <h1>Convincing Videos</h1>
+
     <h2>Videos to Inform you about Climate Change and the Climate Emergency</h2>
+
     <div class="iframe-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/B11kASPfYxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -79,6 +76,15 @@
     </div>
     <div class="iframe-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/OWXoRSIxyIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oGeVt68XYig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/F47RIF_0reA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HzeekxtyFOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
   </body>
